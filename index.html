@@ -442,7 +442,7 @@
 </header>
 
 <!-- HERO -->
-<section id="top" class="relative min-h-[92vh] md:min-h-[95vh] overflow-hidden">
+<section id="top" class="relative min-h-[92vh] md:min-h-[84vh] overflow-hidden">
   <!-- Sparkles -->
   <svg class="sparkle sparkle-anim" style="top:12%;left:8%;width:22px;height:22px;" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
   <svg class="sparkle sparkle-anim s2" style="top:30%;right:14%;width:14px;height:14px;" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
@@ -488,10 +488,24 @@
       </div>
     </div>
 
-    <!-- Bottom: polaroid + scroll hint -->
-    <div class="relative mt-10 md:mt-0 flex items-end justify-between gap-6 pr-4 md:pr-0">
-      <div class="label label-muted pb-4 hidden md:block">↓ turn the page</div>
-      <div class="polaroid rotate-n3 stage ml-auto" data-stage="5"
+    <!-- Bottom: dual-polaroid stack -->
+    <div class="relative mt-10 md:mt-6 grid grid-cols-12 gap-4 md:gap-6 items-end pr-4 md:pr-0">
+      <!-- Left polaroid — smaller, tilted the other way, desktop-only to keep mobile focused -->
+      <div class="polaroid rotate-p3 stage hidden md:block col-span-4"
+           data-stage="4"
+           style="width: min(26vw, 270px); transform-origin: center; margin-left: 4%;">
+        <img src="images/bride-dog.jpg" alt="A bride kneels beside a chocolate labrador on Venice Beach." loading="eager">
+        <div class="polaroid-caption">the bride · a quiet moment</div>
+      </div>
+      <!-- Middle: scroll cue + marginalia (desktop) -->
+      <div class="hidden md:flex col-span-4 flex-col items-center justify-end pb-10 gap-3">
+        <svg viewBox="0 0 24 24" width="12" height="12" style="fill:var(--periwinkle);opacity:0.8;"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+        <div class="label label-muted text-center" style="line-height:1.5;">A Feature<br>in this issue</div>
+        <div class="label" style="font-size:9px;letter-spacing:0.3em;color:var(--ink-soft);">↓ turn the page</div>
+      </div>
+      <!-- Right polaroid — the hero kiss shot -->
+      <div class="polaroid rotate-n3 stage col-span-12 md:col-span-4 ml-auto"
+           data-stage="5"
            style="width: min(62vw, 340px); transform-origin: center;">
         <img src="images/kiss.jpg" alt="A bride and groom kiss on Venice Beach while two chocolate labradors sit at their feet." loading="eager">
         <div class="polaroid-caption">Venice Beach · July · the kiss</div>
