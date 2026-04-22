@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+*.DS_Store
+
+# Local-only source assets (kept on disk, excluded from public repo)
+Business Plan and written assets/
+Old Website/
+research/
+Questions for Rhoda-ANSWERED.txt
+
+# In images/, ignore everything except the web-optimized files actually used by the site
+images/*
+!images/kiss.jpg
+!images/bride-dog.jpg
+!images/groom-dog.jpg
+!images/family-laugh.jpg
+!images/family-wide.jpg
+!images/beach-side.jpg
+!images/rhoda.jpg
+!images/logo.png
+!images/og.jpg
+!images/favicon.png
+!images/favicon-512.png

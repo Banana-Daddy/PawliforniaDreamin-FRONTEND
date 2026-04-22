@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pawlifornia Dreamin' — The dog-inclusive wedding service of the California desert</title>
+<meta name="description" content="Coachella Valley event pet care. Handlers, transportation, and attire so your dog is part of every ceremony. Weddings, elopements, engagements, quinceñeras.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pawlifornia Dreamin'">
+<meta property="og:title" content="Pawlifornia Dreamin' — Irreplaceable memories when our team takes the leash">
+<meta property="og:description" content="The dog-inclusive wedding service of the California desert. Handlers, transportation, and attire so your four-legged best friend is part of every vow.">
+<meta property="og:url" content="https://banana-daddy.github.io/PawliforniaDreamin-FRONTEND/">
+<meta property="og:image" content="https://banana-daddy.github.io/PawliforniaDreamin-FRONTEND/images/og.jpg">
+<meta property="og:image:secure_url" content="https://banana-daddy.github.io/PawliforniaDreamin-FRONTEND/images/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A bride and groom kiss on a Venice Beach shoreline with two chocolate labradors at their feet.">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@pawliforniadreamin">
+<meta name="twitter:title" content="Pawlifornia Dreamin' — Irreplaceable memories when our team takes the leash">
+<meta name="twitter:description" content="The dog-inclusive wedding service of the California desert. Handlers, transportation, and attire so your four-legged best friend is part of every vow.">
+<meta name="twitter:image" content="https://banana-daddy.github.io/PawliforniaDreamin-FRONTEND/images/og.jpg">
+<meta name="twitter:image:alt" content="A bride and groom kiss on a Venice Beach shoreline with two chocolate labradors at their feet.">
+
+<!-- Theme + canonical + favicon -->
+<meta name="theme-color" content="#F5EFE4">
+<link rel="canonical" href="https://banana-daddy.github.io/PawliforniaDreamin-FRONTEND/">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" sizes="512x512" href="images/favicon-512.png">
+
+<!-- Google Fonts: Fraunces (display), Cormorant Garamond (body), Archivo (utility) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: {
+      canvas: '#F5EFE4',
+      'canvas-dim': '#EEE6D6',
+      ink: '#1A1614',
+      'ink-soft': '#5E5548',
+      periwinkle: '#8C8FE8',
+      'periwinkle-deep': '#5C5FBF',
+      'periwinkle-mist': '#D8D9F3',
+      terracotta: '#C96A49',
+      'dusty-rose': '#D9A79F',
+      sand: '#E7D4BC',
+      sage: '#99A88D',
+    },
+    fontFamily: {
+      display: ['Fraunces', 'serif'],
+      serif: ['"Cormorant Garamond"', 'serif'],
+      sans: ['Archivo', 'system-ui', 'sans-serif'],
+    },
+  }}};
+</script>
+<style>
+  :root {
+    --canvas: #F5EFE4;
+    --canvas-dim: #EEE6D6;
+    --ink: #1A1614;
+    --ink-soft: #5E5548;
+    --periwinkle: #8C8FE8;
+    --periwinkle-deep: #5C5FBF;
+    --periwinkle-mist: #D8D9F3;
+    --terracotta: #C96A49;
+    --dusty-rose: #D9A79F;
+    --sand: #E7D4BC;
+    --sage: #99A88D;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    /* subtle paper grain — fine dotted noise */
+    background-image:
+      radial-gradient(rgba(94,85,72,0.04) 1px, transparent 1px),
+      radial-gradient(rgba(94,85,72,0.03) 1px, transparent 1px);
+    background-size: 4px 4px, 7px 7px;
+    background-position: 0 0, 2px 2px;
+  }
+
+  /* Display type — Fraunces variable axes */
+  .font-display {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 50, "opsz" 144, "wght" 700;
+    letter-spacing: -0.035em;
+    line-height: 0.92;
+  }
+  .font-display-italic {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 400;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+
+  /* Utility small-caps labels */
+  .label {
+    font-family: 'Archivo', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--periwinkle-deep);
+  }
+  .label-ink { color: var(--ink); }
+  .label-muted { color: var(--ink-soft); }
+
+  .hairline { border-color: rgba(26,22,20,0.15); }
+  .hairline-peri { border-color: rgba(92,95,191,0.35); }
+
+  /* Section opener with №  */
+  .section-opener {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(26,22,20,0.12);
+    margin-bottom: 2.5rem;
+  }
+  .section-opener .n {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 100, "opsz" 72, "wght" 400;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--periwinkle-deep);
+  }
+  @media (min-width: 768px) { .section-opener .n { font-size: 2rem; } }
+
+  /* Polaroid frame */
+  .polaroid {
+    background: #FDF9EF;
+    padding: 10px 10px 38px 10px;
+    box-shadow:
+      0 12px 30px -8px rgba(26,22,20,0.25),
+      0 2px 6px rgba(26,22,20,0.08);
+    transition: transform 400ms cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  .polaroid img { display: block; width: 100%; height: auto; }
+  .polaroid-caption {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-align: center;
+    margin-top: 8px;
+  }
+  .polaroid:hover { transform: rotate(0deg) scale(1.015); }
+
+  /* Drop cap */
+  .drop-cap::first-letter {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 0, "opsz" 144, "wght" 900;
+    font-size: 5.5em;
+    line-height: 0.85;
+    float: left;
+    margin: 0.08em 0.1em -0.1em 0;
+    color: var(--periwinkle-deep);
+    letter-spacing: -0.04em;
+  }
+
+  /* Link underline draw-in */
+  .link {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .link::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -2px;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 400ms cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .link:hover::after { transform: scaleX(1); transform-origin: left center; }
+  .link-peri { color: var(--periwinkle-deep); }
+
+  /* Sparkle — 4-point star */
+  .sparkle { position: absolute; pointer-events: none; fill: var(--periwinkle); opacity: 0.7; }
+  @keyframes sparkleDrift {
+    0%   { transform: translate(0,0) rotate(0deg) scale(1);   opacity: 0.2; }
+    50%  { transform: translate(10px,-14px) rotate(24deg) scale(1.12); opacity: 0.85; }
+    100% { transform: translate(0,0) rotate(0deg) scale(1);   opacity: 0.2; }
+  }
+  .sparkle-anim { animation: sparkleDrift 6s ease-in-out infinite; }
+  .sparkle-anim.s2 { animation-duration: 8s; animation-delay: -2s; }
+  .sparkle-anim.s3 { animation-duration: 10s; animation-delay: -4s; }
+
+  /* Ring seal (Est. 2022) */
+  .ring-seal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px; height: 96px;
+    border: 1.5px solid var(--periwinkle);
+    border-radius: 999px;
+    text-align: center;
+    position: relative;
+  }
+  .ring-seal::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border: 1px solid var(--periwinkle);
+    border-radius: 999px;
+    opacity: 0.5;
+  }
+  .ring-seal-inner {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 72, "wght" 400;
+    font-size: 12px;
+    line-height: 1.15;
+    color: var(--periwinkle-deep);
+  }
+  .ring-seal-inner strong {
+    display: block;
+    font-style: normal;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* Masthead hero */
+  .masthead-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 20, "opsz" 144, "wght" 800;
+    letter-spacing: -0.045em;
+    line-height: 0.88;
+    color: var(--ink);
+  }
+  .masthead-italic {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 400;
+    letter-spacing: -0.03em;
+    line-height: 0.92;
+    color: var(--periwinkle-deep);
+  }
+
+  /* Package editorial card */
+  .package-card {
+    border-top: 1px solid rgba(26,22,20,0.15);
+    padding: 1.75rem 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    align-items: baseline;
+  }
+  .package-card:last-of-type { border-bottom: 1px solid rgba(26,22,20,0.15); }
+  .package-ring {
+    width: 32px; height: 32px;
+    border: 1.5px solid var(--periwinkle);
+    border-radius: 999px;
+    display: grid; place-items: center;
+    font-family: 'Archivo', sans-serif;
+    font-size: 11px;
+    color: var(--periwinkle-deep);
+    font-weight: 600;
+  }
+  .package-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 40, "opsz" 96, "wght" 500;
+    font-size: 1.85rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  @media (min-width: 768px) { .package-title { font-size: 2.6rem; } }
+  .package-desc {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 72, "wght" 400;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+  }
+  .package-price {
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .package-price strong { font-weight: 600; }
+
+  /* Form */
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label {
+    font-family: 'Archivo', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .field input, .field select, .field textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(26,22,20,0.25);
+    padding: 10px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: var(--ink);
+    transition: border-color 300ms ease;
+    outline: none;
+    border-radius: 0;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-bottom-color: var(--periwinkle);
+  }
+  .field textarea { resize: vertical; min-height: 96px; }
+  .btn-submit {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 72, "wght" 500;
+    background: var(--periwinkle-deep);
+    color: var(--canvas);
+    padding: 18px 32px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 250ms ease, transform 250ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn-submit:hover { background: var(--ink); transform: translateY(-1px); }
+
+  /* Outline stamp */
+  .stamp {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 140px;
+    padding: 18px 24px;
+    border: 1.5px solid var(--periwinkle);
+    border-radius: 999px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--periwinkle-deep);
+    text-align: center;
+    line-height: 1.15;
+    background: rgba(216, 217, 243, 0.2);
+  }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+                transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+    filter: blur(4px);
+    transition-property: opacity, transform, filter;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
+  /* Masthead staggered reveal */
+  .stage { opacity: 0; transform: translateY(14px); filter: blur(6px); }
+  .stage.in {
+    opacity: 1; transform: translateY(0); filter: blur(0);
+    transition: opacity 1100ms cubic-bezier(0.22,1,0.36,1),
+                transform 1100ms cubic-bezier(0.22,1,0.36,1),
+                filter 1100ms cubic-bezier(0.22,1,0.36,1);
+  }
+
+  /* Footer oversized wordmark — borrowed from 21st Modem Footer */
+  .footer-wordmark {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 600;
+    font-style: italic;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    background: linear-gradient(to bottom, rgba(92,95,191,0.18) 0%, rgba(92,95,191,0.08) 60%, transparent 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Utility */
+  .rotate-n2 { transform: rotate(-2deg); }
+  .rotate-n3 { transform: rotate(-3deg); }
+  .rotate-n4 { transform: rotate(-4deg); }
+  .rotate-p2 { transform: rotate(2deg); }
+  .rotate-p3 { transform: rotate(3deg); }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .sparkle-anim { animation: none !important; opacity: 0.5; }
+    .reveal, .stage { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+    .polaroid { transition: none !important; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+
+<body class="overflow-x-hidden">
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 bg-canvas/85 backdrop-blur-sm">
+  <div class="max-w-[1400px] mx-auto px-5 md:px-10 py-4 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2 no-underline">
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="var(--periwinkle)">
+        <path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/>
+      </svg>
+      <span class="font-display text-[17px] tracking-tight" style="font-variation-settings:'SOFT' 60,'opsz' 72,'wght' 500;">Pawlifornia Dreamin'</span>
+    </a>
+    <nav class="flex items-center gap-5 md:gap-7">
+      <a href="#packages" class="hidden md:inline label link label-muted">Packages</a>
+      <a href="#feature" class="hidden md:inline label link label-muted">The Feature</a>
+      <a href="#inquire" class="label link link-peri">Inquire</a>
+      <span class="label label-muted hidden md:inline">EN · ES</span>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[92vh] md:min-h-[95vh] overflow-hidden">
+  <!-- Sparkles -->
+  <svg class="sparkle sparkle-anim" style="top:12%;left:8%;width:22px;height:22px;" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+  <svg class="sparkle sparkle-anim s2" style="top:30%;right:14%;width:14px;height:14px;" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+  <svg class="sparkle sparkle-anim s3" style="bottom:22%;left:22%;width:18px;height:18px;" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+
+  <div class="max-w-[1400px] mx-auto px-5 md:px-10 pt-6 md:pt-10 relative h-full grid grid-rows-[auto_1fr_auto]">
+
+    <!-- Top: issue stamp -->
+    <div class="stage flex items-center justify-between gap-4" data-stage="0">
+      <div class="label" style="font-size:10px; letter-spacing:0.18em;">
+        <span class="hidden sm:inline">№ 01 · Vol. II · </span>Palm Springs Edition · Est 2022
+      </div>
+      <div class="label hidden md:block label-muted">The Desert Wedding Issue</div>
+    </div>
+
+    <!-- Middle: Masthead + side matter -->
+    <div class="relative mt-8 md:mt-14">
+      <!-- PAWLIFORNIA -->
+      <h1 class="masthead-title stage" data-stage="1"
+          style="font-size: clamp(2.7rem, 13.5vw, 12rem);">
+        PAWLIFORNIA
+      </h1>
+      <!-- Dreamin' italic, overlapping -->
+      <p class="masthead-italic stage -mt-2 md:-mt-6" data-stage="2"
+         style="font-size: clamp(2.8rem, 13vw, 11rem); padding-left: 4%;">
+        Dreamin'<span style="color:var(--periwinkle)">.</span>
+      </p>
+
+      <!-- Marginalia blocks -->
+      <div class="mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
+        <p class="font-serif italic md:col-span-5 stage" data-stage="3" style="font-size:clamp(1.1rem, 1.8vw, 1.35rem); max-width:38ch; color:var(--ink-soft);">
+          The dog-inclusive wedding service of the California desert. Handlers, transportation, and attire so your four-legged best friend is present for every vow.
+        </p>
+        <div class="md:col-span-4 md:col-start-9 stage flex items-start gap-4" data-stage="4">
+          <span class="ring-seal shrink-0" aria-hidden="true">
+            <span class="ring-seal-inner">
+              <strong>Est. 2022</strong>
+              Coachella<br>Valley
+            </span>
+          </span>
+          <p class="label label-muted pt-3">Servicing the high desert,<br>low desert &amp; beyond.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom: polaroid + scroll hint -->
+    <div class="relative mt-10 md:mt-0 flex items-end justify-between gap-6 pr-4 md:pr-0">
+      <div class="label label-muted pb-4 hidden md:block">↓ turn the page</div>
+      <div class="polaroid rotate-n3 stage ml-auto" data-stage="5"
+           style="width: min(62vw, 340px); transform-origin: center;">
+        <img src="images/kiss.jpg" alt="A bride and groom kiss on Venice Beach while two chocolate labradors sit at their feet." loading="eager">
+        <div class="polaroid-caption">Venice Beach · July · the kiss</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OPENING EDITORIAL LEAD -->
+<section class="py-20 md:py-32">
+  <div class="max-w-[900px] mx-auto px-5 md:px-10">
+    <p class="label reveal">An introduction</p>
+    <p class="drop-cap reveal font-serif" style="margin-top:1.5rem; font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.55; color: var(--ink);">
+      Irreplaceable memories are guaranteed when our team takes the leash. Pawlifornia Dreamin' is an event pet care service built on one belief — that your four-legged best friend belongs in the frame, the ceremony, and the story. <em class="font-display-italic" style="color:var(--periwinkle-deep);">We coordinate the details so you don't have to.</em> Pickup, transport, event attire, vendor coordination, and quality insured care from first kiss to last dance.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 02 — OCCASIONS -->
+<section class="py-16 md:py-24 bg-canvas-dim">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    <div class="section-opener reveal">
+      <span class="n">№ 02</span>
+      <span class="label label-ink">Book Us For</span>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 md:gap-x-12 gap-y-10 md:gap-y-16">
+      <!-- Cards -->
+      <article class="reveal">
+        <div class="label mb-2">i.</div>
+        <h3 class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 96,'wght' 500;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1;">Weddings</h3>
+        <p class="font-serif italic mt-3" style="color:var(--ink-soft);">The whole day, from first look to last dance. Pets as guests, ring-bearers, or quiet companions.</p>
+      </article>
+      <article class="reveal">
+        <div class="label mb-2">ii.</div>
+        <h3 class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 96,'wght' 500;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1;">Elopements</h3>
+        <p class="font-serif italic mt-3" style="color:var(--ink-soft);">Just the two of you — plus one very important third party with a wagging tail.</p>
+      </article>
+      <article class="reveal">
+        <div class="label mb-2">iii.</div>
+        <h3 class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 96,'wght' 500;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1;">Engagements</h3>
+        <p class="font-serif italic mt-3" style="color:var(--ink-soft);">Pop the question with your partner's biggest supporter kneeling right beside you.</p>
+      </article>
+      <article class="reveal">
+        <div class="label mb-2">iv.</div>
+        <h3 class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 96,'wght' 500;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1;">Vow Renewals</h3>
+        <p class="font-serif italic mt-3" style="color:var(--ink-soft);">A second take — because the dog wasn't invited to the first.</p>
+      </article>
+      <article class="reveal">
+        <div class="label mb-2">v.</div>
+        <h3 class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 96,'wght' 500;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1;">Quinceañeras</h3>
+        <p class="font-serif italic mt-3" style="color:var(--ink-soft);">Fifteen-candle moments with the family dog in the court.</p>
+      </article>
+      <article class="reveal">
+        <div class="label mb-2">vi.</div>
+        <h3 class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 96,'wght' 500;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1;">Family Photos</h3>
+        <p class="font-serif italic mt-3" style="color:var(--ink-soft);">Holidays, milestones, and portraits. Everybody in the picture, nobody left in the car.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 03 — IN EVERY PACKAGE -->
+<section class="py-20 md:py-32">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    <div class="section-opener reveal">
+      <span class="n">№ 03</span>
+      <span class="label label-ink">In Every Package</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-start">
+      <div class="md:col-span-7 reveal">
+        <p class="font-display-italic" style="font-size:clamp(1.6rem,2.6vw,2.1rem);line-height:1.25;color:var(--ink);max-width:26ch;">
+          Every booking, no matter the size, comes with the essentials for a calm, photographed day.
+        </p>
+        <ul class="mt-10 divide-y" style="border-color:rgba(26,22,20,0.12);">
+          <li class="py-5 grid grid-cols-[2rem_1fr] gap-4 items-baseline">
+            <svg viewBox="0 0 24 24" width="14" height="14" style="fill:var(--periwinkle);"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+            <div>
+              <div class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 48,'wght' 500;font-size:1.35rem;line-height:1.1;">A Qualified Handler</div>
+              <div class="font-serif italic" style="color:var(--ink-soft);font-size:1rem;margin-top:0.2rem;">One handler per pet. Meet-and-greet before the event on request.</div>
+            </div>
+          </li>
+          <li class="py-5 grid grid-cols-[2rem_1fr] gap-4 items-baseline">
+            <svg viewBox="0 0 24 24" width="14" height="14" style="fill:var(--periwinkle);"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+            <div>
+              <div class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 48,'wght' 500;font-size:1.35rem;line-height:1.1;">Safe Transportation</div>
+              <div class="font-serif italic" style="color:var(--ink-soft);font-size:1rem;margin-top:0.2rem;">To and from — up to 30 miles. Adaptil calming spray, seat belt &amp; crate options.</div>
+            </div>
+          </li>
+          <li class="py-5 grid grid-cols-[2rem_1fr] gap-4 items-baseline">
+            <svg viewBox="0 0 24 24" width="14" height="14" style="fill:var(--periwinkle);"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+            <div>
+              <div class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 48,'wght' 500;font-size:1.35rem;line-height:1.1;">Basic Supplies</div>
+              <div class="font-serif italic" style="color:var(--ink-soft);font-size:1rem;margin-top:0.2rem;">Water bowl &amp; water, poop bags, treats of choice, AirTag.</div>
+            </div>
+          </li>
+          <li class="py-5 grid grid-cols-[2rem_1fr] gap-4 items-baseline">
+            <svg viewBox="0 0 24 24" width="14" height="14" style="fill:var(--periwinkle);"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+            <div>
+              <div class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 48,'wght' 500;font-size:1.35rem;line-height:1.1;">Rental Attire</div>
+              <div class="font-serif italic" style="color:var(--ink-soft);font-size:1rem;margin-top:0.2rem;">Black harness, black leash, and bow tie or flower accessory.</div>
+            </div>
+          </li>
+          <li class="py-5 grid grid-cols-[2rem_1fr] gap-4 items-baseline">
+            <svg viewBox="0 0 24 24" width="14" height="14" style="fill:var(--periwinkle);"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+            <div>
+              <div class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 48,'wght' 500;font-size:1.35rem;line-height:1.1;">Event Coordination</div>
+              <div class="font-serif italic" style="color:var(--ink-soft);font-size:1rem;margin-top:0.2rem;">We plan with your vendors and venue for a smooth day. <span class="label label-muted" style="font-size:9px;">*Oasis &amp; up</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-5 reveal md:pt-10">
+        <div class="polaroid rotate-p3" style="max-width:440px;margin-inline:auto;">
+          <img src="images/bride-dog.jpg" alt="A bride kneels beside a chocolate labrador on Venice Beach with palm trees in the background." loading="lazy">
+          <div class="polaroid-caption">a quiet moment before the ceremony</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 04 — PACKAGES -->
+<section id="packages" class="py-20 md:py-32" style="background:linear-gradient(180deg,var(--canvas) 0%,var(--sand) 70%,var(--sand) 100%);">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    <div class="section-opener reveal">
+      <span class="n">№ 04</span>
+      <span class="label label-ink">The Packages</span>
+    </div>
+
+    <p class="reveal font-display-italic mb-10" style="font-size:clamp(1.4rem,2.2vw,1.8rem);max-width:32ch;color:var(--ink);line-height:1.2;">
+      Six ways to include your dog, priced from a single hour to a full wedding day.
+    </p>
+
+    <div class="reveal">
+      <article class="package-card">
+        <span class="package-ring">i</span>
+        <div>
+          <h3 class="package-title">Desert Engagement</h3>
+          <p class="package-desc">Pop the question with your partner's biggest supporter.</p>
+        </div>
+        <div class="package-price text-right"><strong>From $200</strong><br><span class="label label-muted" style="font-size:9px;">1 hour</span></div>
+      </article>
+
+      <article class="package-card">
+        <span class="package-ring">ii</span>
+        <div>
+          <h3 class="package-title">Desert Snapshot</h3>
+          <p class="package-desc">Capture the perfect picture with your four-legged friend.</p>
+        </div>
+        <div class="package-price text-right"><strong>From $350</strong><br><span class="label label-muted" style="font-size:9px;">1.5 hours</span></div>
+      </article>
+
+      <article class="package-card">
+        <span class="package-ring">iii</span>
+        <div>
+          <h3 class="package-title">Desert Escape</h3>
+          <p class="package-desc">For eloping lovebirds who won't leave their pet out.</p>
+        </div>
+        <div class="package-price text-right"><strong>From $350</strong><br><span class="label label-muted" style="font-size:9px;">1.5 hours · elopement</span></div>
+      </article>
+
+      <article class="package-card">
+        <span class="package-ring">iv</span>
+        <div>
+          <h3 class="package-title">Desert Oasis</h3>
+          <p class="package-desc">Include your pet at the main event, plus photos after. +20 miles.</p>
+        </div>
+        <div class="package-price text-right"><strong>From $750</strong><br><span class="label label-muted" style="font-size:9px;">3 hours</span></div>
+      </article>
+
+      <article class="package-card">
+        <span class="package-ring">v</span>
+        <div>
+          <h3 class="package-title">Desert Paradise</h3>
+          <p class="package-desc">The whole family in every core moment. +25 miles.</p>
+        </div>
+        <div class="package-price text-right"><strong>From $1,200</strong><br><span class="label label-muted" style="font-size:9px;">5 hours</span></div>
+      </article>
+
+      <article class="package-card">
+        <span class="package-ring">vi</span>
+        <div>
+          <h3 class="package-title">Desert Dreamin'</h3>
+          <p class="package-desc">Start to finish. For party animals who want to be in it all day. +30 miles.</p>
+        </div>
+        <div class="package-price text-right"><strong>From $1,500</strong><br><span class="label label-muted" style="font-size:9px;">7 hours</span></div>
+      </article>
+    </div>
+
+    <!-- Fairytail bundle insert -->
+    <div class="reveal mt-14 md:mt-20 relative border border-periwinkle/60 rounded-sm p-8 md:p-12 bg-canvas" style="border-color:var(--periwinkle);">
+      <div class="label absolute -top-3 left-8 bg-canvas px-3" style="color:var(--periwinkle-deep);">Editor's Insert</div>
+      <div class="flex items-start md:items-center gap-5 md:gap-10 flex-col md:flex-row">
+        <div>
+          <h3 class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 96,'wght' 500;font-size:clamp(2rem,3.5vw,2.8rem);line-height:1;">The Fairytail Bundle</h3>
+          <p class="font-serif italic mt-3" style="color:var(--ink-soft);font-size:1.15rem;">Bundle three or more services — Desert Engagement + Snapshot + an Oasis-and-up package — and save 15%.</p>
+        </div>
+        <div class="font-display shrink-0 md:ml-auto" style="font-variation-settings:'SOFT' 0,'opsz' 144,'wght' 800;font-size:clamp(3rem,6vw,5rem);color:var(--periwinkle-deep);letter-spacing:-0.04em;line-height:0.8;">
+          –15%
+        </div>
+      </div>
+    </div>
+
+    <!-- Add-ons fine print -->
+    <p class="reveal label label-muted mt-10">Add-ons: additional pet +$150 · additional hour +$150 · rehearsal service · post-wedding care until midnight · overnight stay · formal wear rental.</p>
+  </div>
+</section>
+
+<!-- SECTION 05 — FEATURE: THE CHOCOLATE LAB KISS -->
+<section id="feature" class="py-20 md:py-32 relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-5 md:px-10">
+    <div class="section-opener reveal">
+      <span class="n">№ 05</span>
+      <span class="label label-ink">A Feature</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
+      <div class="md:col-span-7 reveal">
+        <div class="polaroid rotate-n2" style="max-width:680px;">
+          <img src="images/kiss.jpg" alt="A bride and groom share a kiss on Venice Beach while two chocolate labradors sit in the sand before them, palm trees in the distance.">
+          <div class="polaroid-caption">Venice Beach · July · two chocolate labs · one unforgettable ceremony</div>
+        </div>
+      </div>
+      <div class="md:col-span-5 reveal">
+        <p class="label">The Venice Beach Wedding</p>
+        <h3 class="font-display mt-3" style="font-variation-settings:'SOFT' 20,'opsz' 144,'wght' 700;font-size:clamp(2.6rem,5vw,4.5rem);line-height:0.96;letter-spacing:-0.035em;">Two chocolate labs.</h3>
+        <p class="font-display-italic" style="font-size:clamp(2.2rem,4vw,3.5rem);line-height:1;color:var(--periwinkle-deep);padding-left:1.5rem;">one ceremony.</p>
+
+        <blockquote class="mt-8 relative pl-6" style="border-left:2px solid var(--periwinkle);">
+          <p class="font-display-italic" style="font-size:clamp(1.4rem,2.2vw,1.8rem);line-height:1.3;color:var(--ink);">
+            "They weren't guests — they were family. Our team handled pickup, wardrobe, and the walk down the aisle. The couple just got to be the couple."
+          </p>
+          <footer class="mt-5 flex items-center gap-3">
+            <cite class="font-serif not-italic" style="font-weight:500;">Rhoda Coscetti</cite>
+            <span aria-hidden class="w-1 h-1 rounded-full" style="background:var(--ink-soft);opacity:0.5;"></span>
+            <span class="label label-muted">Founder &amp; Lead Handler</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- 3-up supporting grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mt-16 md:mt-24">
+      <div class="reveal polaroid rotate-p2" style="max-width:380px;margin-inline:auto;">
+        <img src="images/bride-dog.jpg" alt="A bride kneels beside a chocolate labrador on the beach." loading="lazy">
+        <div class="polaroid-caption">the bride + her biggest fan</div>
+      </div>
+      <div class="reveal polaroid rotate-n3" style="max-width:380px;margin-inline:auto;">
+        <img src="images/groom-dog.jpg" alt="A groom in a navy tuxedo crouches with a chocolate labrador on the beach." loading="lazy">
+        <div class="polaroid-caption">the groom + his best man</div>
+      </div>
+      <div class="reveal polaroid rotate-p3" style="max-width:380px;margin-inline:auto;">
+        <img src="images/family-laugh.jpg" alt="The newlywed couple laughs with both chocolate labradors sitting between them on the beach." loading="lazy">
+        <div class="polaroid-caption">the portrait · after the vows</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 06 — BEHIND THE LEASH + LILY TRIBUTE -->
+<section class="py-20 md:py-32 bg-canvas-dim">
+  <div class="max-w-[1000px] mx-auto px-5 md:px-10">
+    <div class="section-opener reveal">
+      <span class="n">№ 06</span>
+      <span class="label label-ink">Behind the Leash</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+      <div class="md:col-span-8 reveal">
+        <p class="font-serif" style="font-size:1.2rem;line-height:1.65;color:var(--ink);">
+          Founded by <span class="font-display-italic" style="color:var(--periwinkle-deep);font-size:1.3em;">Rhoda Coscetti</span> — Coachella Valley native, UC Davis Animal Biology, eight years in animal welfare across rescues and municipal shelters. Rhoda built Pawlifornia Dreamin' on a simple idea: couples shouldn't have to choose between a polished celebration and including the pet who started the family. <em class="font-display-italic" style="color:var(--periwinkle-deep);">She trains every handler on the team.</em>
+        </p>
+      </div>
+      <div class="md:col-span-4 reveal">
+        <div class="polaroid rotate-p2" style="max-width:260px;margin-inline:auto;">
+          <img src="images/rhoda.jpg" alt="Rhoda Coscetti smiles while holding a white poodle mix and a white chihuahua." loading="lazy">
+          <div class="polaroid-caption">Rhoda, with Leaf &amp; Lily</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lily tribute — quiet -->
+    <div class="mt-20 md:mt-28 reveal max-w-[620px] mx-auto text-center">
+      <svg viewBox="0 0 24 24" width="16" height="16" style="fill:var(--periwinkle);margin:0 auto 12px;display:block;"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+      <p class="label mb-4" style="color:var(--periwinkle-deep);">In Honor of Lily</p>
+      <p class="font-display-italic" style="font-size:clamp(1.3rem,1.9vw,1.55rem);line-height:1.4;color:var(--ink);">
+        Pawlifornia Dreamin' is in honor of Lily, a senior chihuahua who crossed the rainbow bridge in 2023 — she taught us what love without limits looks like.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 07 — CREDENTIALS + SPANISH -->
+<section class="py-16 md:py-24">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    <div class="section-opener reveal">
+      <span class="n">№ 07</span>
+      <span class="label label-ink">The Credentials</span>
+    </div>
+
+    <div class="flex flex-wrap gap-3 md:gap-4 justify-center reveal">
+      <div class="stamp">Insured<br>& Bonded</div>
+      <div class="stamp">Pet CPR<br>Certified</div>
+      <div class="stamp">Fear Free<br>Handling</div>
+      <div class="stamp">LGBTQIA+<br>Inclusive</div>
+      <div class="stamp">All Cultural<br>Celebrations</div>
+    </div>
+
+    <p class="reveal text-center mt-10 md:mt-14 font-display-italic" style="font-size:clamp(1.5rem,2.2vw,1.9rem);color:var(--periwinkle-deep);">
+      ¡También hablamos español!
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 08 — INQUIRY FORM -->
+<section id="inquire" class="py-20 md:py-32" style="background:linear-gradient(180deg,var(--canvas) 0%,var(--canvas-dim) 100%);">
+  <div class="max-w-[760px] mx-auto px-5 md:px-10">
+    <div class="section-opener reveal">
+      <span class="n">№ 08</span>
+      <span class="label label-ink">Say Hello</span>
+    </div>
+
+    <div class="reveal">
+      <h2 class="font-display" style="font-variation-settings:'SOFT' 30,'opsz' 144,'wght' 600;font-size:clamp(2.4rem,4.5vw,3.8rem);line-height:0.98;letter-spacing:-0.035em;">Tell us about <span class="font-display-italic" style="color:var(--periwinkle-deep);">your day.</span></h2>
+      <p class="font-serif italic mt-5" style="font-size:1.15rem;color:var(--ink-soft);max-width:50ch;">
+        Drop us a note and we'll be in touch within 48 hours. Prefer DMs? Find us on Instagram <a class="link link-peri" href="https://instagram.com/pawliforniadreamin" target="_blank" rel="noopener">@pawliforniadreamin</a>.
+      </p>
+    </div>
+
+    <form class="reveal mt-12 grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-8" onsubmit="event.preventDefault(); this.querySelector('.submit-done').classList.remove('hidden'); this.querySelector('.btn-submit').textContent='Sent — we\\'ll be in touch'; this.querySelector('.btn-submit').disabled=true;">
+      <div class="field md:col-span-1"><label for="f-name">Your Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
+      <div class="field md:col-span-1"><label for="f-email">Email</label><input type="email" id="f-email" name="email" required autocomplete="email"></div>
+
+      <div class="field md:col-span-1">
+        <label for="f-event">Event Type</label>
+        <select id="f-event" name="event">
+          <option>Wedding</option>
+          <option>Elopement</option>
+          <option>Engagement</option>
+          <option>Vow renewal</option>
+          <option>Quinceañera</option>
+          <option>Family photos</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="field md:col-span-1"><label for="f-date">Event Date</label><input type="date" id="f-date" name="date"></div>
+
+      <div class="field md:col-span-2"><label for="f-venue">Venue or Location</label><input type="text" id="f-venue" name="venue" placeholder="e.g. Parker Palm Springs · Ace Hotel · Joshua Tree"></div>
+
+      <div class="field md:col-span-1">
+        <label for="f-pets"># of Pets</label>
+        <select id="f-pets" name="pets">
+          <option>1</option><option>2</option><option>3</option><option>4+</option>
+        </select>
+      </div>
+      <div class="field md:col-span-1">
+        <label for="f-package">Package (optional)</label>
+        <select id="f-package" name="package">
+          <option>Not sure yet</option>
+          <option>Desert Engagement</option>
+          <option>Desert Snapshot</option>
+          <option>Desert Escape</option>
+          <option>Desert Oasis</option>
+          <option>Desert Paradise</option>
+          <option>Desert Dreamin'</option>
+        </select>
+      </div>
+
+      <div class="field md:col-span-2"><label for="f-msg">Tell us about your day</label><textarea id="f-msg" name="message" rows="4" placeholder="Vibe, timeline, pet names, anything we should know…"></textarea></div>
+
+      <div class="md:col-span-2 mt-4">
+        <button type="submit" class="btn-submit">Send Inquiry <span aria-hidden>→</span></button>
+        <p class="submit-done hidden mt-4 font-serif italic" style="color:var(--periwinkle-deep);">Thanks! Rhoda will reach out within 48 hours.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- SECTION 09 — WEDDING PLANNERS -->
+<section class="py-16 md:py-20 border-t" style="border-color:rgba(26,22,20,0.12);">
+  <div class="max-w-[900px] mx-auto px-5 md:px-10 text-center">
+    <p class="label mb-4">For Wedding Planners &amp; Venues</p>
+    <p class="font-display-italic" style="font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.3;color:var(--ink);max-width:34ch;margin:0 auto;">
+      We work closely with planners, venues, and photographers across the Coachella Valley. <span style="color:var(--periwinkle-deep);">Let's build dreamy days together.</span>
+    </p>
+    <a class="link link-peri label inline-block mt-6" href="mailto:info@pawliforniadreamin.com?subject=Partner%20Inquiry" style="font-size:13px;">Partner inquiries →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="relative overflow-hidden pt-24 md:pt-40" style="background:linear-gradient(180deg,var(--canvas) 0%,var(--canvas-dim) 100%);">
+  <!-- oversized wordmark -->
+  <div class="footer-wordmark absolute left-1/2 -translate-x-1/2 bottom-[28%] text-center w-[120%]"
+       style="font-size: clamp(4rem, 22vw, 20rem);">
+    Pawlifornia
+  </div>
+
+  <div class="relative max-w-[1200px] mx-auto px-5 md:px-10 pb-32 md:pb-48">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3">
+          <img src="images/logo.png" alt="Pawlifornia Dreamin' logo" width="56" height="56" style="width:56px;height:auto;">
+          <div>
+            <div class="font-display" style="font-variation-settings:'SOFT' 40,'opsz' 72,'wght' 600;font-size:1.3rem;line-height:1;">Pawlifornia Dreamin'</div>
+            <div class="label label-muted mt-1">Est. 2022 · Coachella Valley, CA</div>
+          </div>
+        </div>
+        <p class="font-serif italic mt-6" style="color:var(--ink-soft);max-width:36ch;">
+          Irreplaceable memories are guaranteed when our team takes the leash.
+        </p>
+      </div>
+
+      <div class="md:col-span-3">
+        <p class="label mb-4">Connect</p>
+        <ul class="space-y-2 font-serif" style="font-size:1.05rem;">
+          <li><a class="link" href="https://instagram.com/pawliforniadreamin" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a class="link" href="mailto:info@pawliforniadreamin.com">info@pawliforniadreamin.com</a></li>
+          <li><a class="link" href="#inquire">Inquiry form</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-4">
+        <p class="label mb-4">Service Area</p>
+        <p class="font-serif" style="font-size:1.05rem;color:var(--ink);">Coachella Valley · Palm Springs · Palm Desert · La Quinta · Indio · Rancho Mirage · Joshua Tree</p>
+        <p class="font-serif italic mt-2" style="color:var(--ink-soft);font-size:0.95rem;">Destination weddings in Southern California considered on request.</p>
+      </div>
+    </div>
+
+    <div class="mt-20 pt-6 border-t flex flex-col md:flex-row items-start md:items-center justify-between gap-4" style="border-color:rgba(26,22,20,0.12);">
+      <p class="label label-muted">© 2022–2026 Pawlifornia Dreamin' LLC · All rights reserved</p>
+      <p class="label" style="color:var(--periwinkle-deep);">
+        <svg viewBox="0 0 24 24" width="10" height="10" style="fill:var(--periwinkle);display:inline-block;margin-right:6px;vertical-align:middle;"><path d="M12 0 L13.5 10.5 L24 12 L13.5 13.5 L12 24 L10.5 13.5 L0 12 L10.5 10.5 Z"/></svg>
+        Made with care, in honor of Lily
+      </p>
+    </div>
+
+    <!-- Banana Bytes credit (required) -->
+    <div style="text-align:center;padding:1.5rem 1rem 0;font-size:0.7rem;letter-spacing:0.05em;opacity:0.45;">
+      <a href="https://instagram.com/BananaCares" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">Mockup created by Banana Bytes</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Staggered masthead reveal on load
+  document.addEventListener('DOMContentLoaded', () => {
+    const stages = document.querySelectorAll('.stage');
+    stages.forEach((el, i) => {
+      const delay = parseInt(el.dataset.stage || i, 10) * 140 + 120;
+      setTimeout(() => el.classList.add('in'), delay);
+    });
+  });
+
+  // Scroll reveals via IntersectionObserver
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>
